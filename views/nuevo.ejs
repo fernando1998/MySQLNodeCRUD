@@ -4,14 +4,19 @@
   <meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Nuevo Libro</title>
+	<title>Nuevo Libro</title>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/bootstrap/js/custom.js"></script>
 </head>
 <body>
 <div class="container">
 	<div class="row">
-		<div class="col-md-12">
-			<h2 align="center"><span class="fa fa-book"></span> Nuevo Libro</h2>
-
+		<div class="col-md-12" style="margin-top: 10px;">
+			<div class="jumbotron">
+				<h1 align="center"><span class="fa fa-book"></span> NUEVO LIBRO</h1>
+			</div>
+			
 			<ol class="breadcrumb" style="margin-top:40px;">
 				<li><a href="/" style="text-decoration: none;color: black;"><i class="fa fa-home"></i> Inicio /</a></li>
 			</ol>
@@ -29,8 +34,12 @@
 				
 				<div class="form-group">
 					<label for="imagen">Imagen</label>
-					<input type="file" name="libro[imagen]" class="form-control" id="imagen" required>
+					<input type="file" name="libro[imagen]" class="form-control" id="inputImage" required>
 			  </div>
+				
+				<div id="previewImage" align="center">
+						
+				</div>
 
 			  <div class="form-group">
 					<label for="fecha">Fecha</label>

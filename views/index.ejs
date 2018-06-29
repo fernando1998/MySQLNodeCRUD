@@ -9,7 +9,7 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<h2 align="center"><span class="fa fa-book"></span> Libros</h2>
+			<h1 align="center"><span class="fa fa-book"></span> L I B R O S </h1>
 			<a href="/nuevo" class="btn btn-success"><span class="fa fa-plus-circle"></span> Nuevo</a>
 			<br><br>
 			<% if(lista.length>0){%>
@@ -26,13 +26,13 @@
 						</div>
 						<div class="card-footer" align="center">
 							<a href="/editar/<%= lista[i].id %>" class="btn btn-warning">Editar</a>
-							<a href="/eliminar/<%= lista[i].id %>" onclick="return confirm('¿Estas seguro de eliminar esta noticia?');" class="btn btn-danger">Eliminar</a>
+							<a href="/eliminar/<%= lista[i].id %>" onclick="return confirm('¿Estas seguro de eliminar este libro amiguito v,: ?');" class="btn btn-danger">Eliminar</a>
 						</div>
 					</div>
 				</div>
 				<% } %>
 			<%} else {%>
-				<p class="alert alert-warning">No hay contactos</p>
+				<p class="alert alert-warning">No hay libros :(</p>
 			<% } %>
 		</div>
 	</div>
